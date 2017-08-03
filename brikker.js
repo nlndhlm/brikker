@@ -15,8 +15,6 @@ var numCircles = 0;
 var isClicked = false;
 var canAddCircles = true;
 
-
-
 var xPos = 50;
 var yPos = 25;
 
@@ -26,7 +24,6 @@ var circleR = canvasH /20;
 var colorChoice = "#15BF42";
 
 var circleOpacity = 0.85;
-
 
 function addCircleBounds() {
 	if(numCircles % 10 == 0) {
@@ -46,9 +43,7 @@ function updateCircleCount() {
 }
 
 function addOneCircle() {
-
 	maxCircleNum();
-
 	if (canAddCircles == true) {
 		numCircles++;
 		circle = new fabric.Circle({
@@ -64,11 +59,8 @@ function addOneCircle() {
 
 		canvas.add(circle);
 		updateCircleCount();
-
 	}
 }
-
-
 
 function resetCanvas() {
 	canvas.clear();
@@ -83,7 +75,6 @@ function changeCircleColor(color) {
 	colorChoice = color;
 	document.getElementById("add-circle").style.backgroundColor = color;
 }
-
 
 //stack overflow code for boundaries
 canvas.on('object:moving', function (e) {
