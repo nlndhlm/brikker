@@ -14,7 +14,6 @@ p {
 	font-size: 3em;
 }
 
-
 #container {
 	margin: auto;
 	text-align: center;
@@ -24,8 +23,6 @@ p {
 canvas {
 	border: 1px solid #C4C4C4;
 }
-
-
 
 a {
 	margin-top: 5px;
